@@ -1,17 +1,15 @@
-package org.example
-
-fun printLength(str: String?) {
-    if (str != null) {
-        println("Length of the string: ${str.length}")
+fun printLength(name: String?) {
+    if (name != null) {
+        println("Length is: ${name.length}")
     } else {
-        println("String is null")
+        println("null")
     }
 }
 
 fun main() {
-    val nonNullString: String? = "Kotlin"
-    val nullString: String? = null
+    val name: String = "Rameshwar"
+    val nullname: String? = null
 
-    printLength(nonNullString)
-    printLength(nullString)
+    printLength(name)
+    printLength(nullname)
 }
